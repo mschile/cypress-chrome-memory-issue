@@ -1,6 +1,10 @@
 /// <reference types="cypress" />
 describe('page', () => {
-  it('works', () => {
-    cy.visit('https://example.cypress.io')
-  })
+  for (let index = 0; index < 12; index++) {
+    it(`test ${index + 1}`, () => {
+      for (let index = 0; index < 10; index++) {
+        cy.visit('https://earth.google.com/web/')
+      }
+    })
+  }
 })

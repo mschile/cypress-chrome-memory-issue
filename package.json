@@ -3,21 +3,21 @@
   "version": "1.0.0",
   "description": "Small project for quickly testing Cypress.io test runner",
   "scripts": {
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser chromium --e2e",
+    "cypress:run:force:gc": "CYPRESS_FORCE_GC=true npm run cypress:run",
+    "cypress:open": "cypress open --browser chromium --e2e",
+    "cypress:open:force:gc": "CYPRESS_FORCE_GC=true npm run cypress:open",
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
     "cypress:info": "cypress info",
     "cypress:cache:list": "cypress cache list",
     "list-videos": "ls -l cypress/videos",
-    "check-videos": "ok-file 'cypress/videos/*.mp4'",
     "set-status": "set-status"
   },
   "keywords": [],
-  "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
-    "ok-file": "1.5.2"
+    "cypress": "^11.1.0"
   },
   "repository": {
     "type": "git",

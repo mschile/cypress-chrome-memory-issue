@@ -1,6 +1,8 @@
 module.exports = {
+  numTestsKeptInMemory: 0,
+  video: false,
   e2e: {
-    baseUrl: 'https://google.com/',
+    baseUrl: 'https://earth.google.com/web/',
     setupNodeEvents(on, config) {
       on('before:browser:launch', (browser = {}, launchOptions) => {
         if (browser.name === 'chrome' || browser.name === 'chromium') {    

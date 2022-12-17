@@ -23,7 +23,7 @@ npm run cypress:open
 
 ## Force garbage collection
 
-Forcing garbage collection through `--enable-gc` flag and calling `window.gc()` allows the tests to pass on Chromium 104+:
+Forcing garbage collection through `HeapProfiler.collectGarbage` allows the tests to pass on Chromium 104+:
 
 ###### Headless browser:
 ```
